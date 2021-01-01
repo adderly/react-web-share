@@ -21,7 +21,7 @@ const IconsLisStyle: CSSProperties = {
   gridGap: "1.25rem",
 };
 
-export default function SocialIcons({ onClose, sites, data }: SocialIconsProps) {
+export default function SocialIcons({ onClose, sites, data, hasCloseButton = true }: SocialIconsProps) {
   return (
     <section
       role="dialog"
@@ -35,7 +35,7 @@ export default function SocialIcons({ onClose, sites, data }: SocialIconsProps) 
           <Icon name={name} key={name} data={data} onClose={onClose} />
         ))}
       </div>
-      <CloseButton onClose={onClose} />
+      { hasCloseButton && <CloseButton onClose={onClose} /> }
     </section>
   );
 }

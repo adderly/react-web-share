@@ -14,6 +14,7 @@ export interface SocialIconsProps {
   onClose;
   sites: string[];
   data: Required<ShareData>;
+  hasCloseButton: boolean;
 }
 
 export interface IconProps {
