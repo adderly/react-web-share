@@ -18,7 +18,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build && filesize",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "yarn build"
   },
   "dependencies": {},
   "peerDependencies": {
